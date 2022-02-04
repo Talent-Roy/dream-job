@@ -11,7 +11,7 @@ body {
 .gjs-div.c8925.notch-right.mb-3.mb-md-0 {
   height: 100%;
   width: 100%;
-  background-image: url("/assets/Kenny_Sabarese.jpg");
+  background-image: url("./assets/Kenny_Sabarese.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -286,7 +286,7 @@ body {
 }
 
 .gjs-div.c39039 {
-  background-image: url("/assets/dream-company.png");
+  background-image: url("./assets/dream-company.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -307,7 +307,7 @@ body {
 }
 
 .gjs-div.c39039.py-md-4.py-2 {
-  background-image: url("/assets/playbook-9.png");
+  background-image: url("./assets/playbook-9.png");
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: contain;
@@ -457,7 +457,7 @@ body {
 }
 
 .gjs-div.c17973 {
-  background-image: url("/assets/playbook-8.png");
+  background-image: url("./assets/playbook-8.png");
   background-attachment: scroll;
   background-size: cover;
   background-position: center top;
@@ -773,7 +773,7 @@ body {
 }
 
 .gjs-div.py-md-4.py-2 {
-  background-image: url("/assets/playbook-8.png");
+  background-image: url("./assets/playbook-8.png");
   background-repeat: repeat;
   background-position: left top;
   background-attachment: scroll;
@@ -781,7 +781,7 @@ body {
 }
 
 .gjs-div.c48606 {
-  background-image: url("/assets/discover.png");
+  background-image: url("./assets/discover.png");
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -789,7 +789,7 @@ body {
 }
 
 .gjs-div.c49634 {
-  background-image: url("/assets/istockphoto-682897889-2048x2048-copy.png");
+  background-image: url("./assets/istockphoto-682897889-2048x2048-copy.png");
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -797,7 +797,7 @@ body {
 }
 
 .gjs-div.c36791 {
-  background-image: url("/assets/vip-network.png");
+  background-image: url("./assets/vip-network.png");
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -805,7 +805,7 @@ body {
 }
 
 .gjs-div.c45122 {
-  background-image: url("/assets/the-perfect-resume.png");
+  background-image: url("./assets/the-perfect-resume.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -813,7 +813,7 @@ body {
 }
 
 .gjs-div.c46742 {
-  background-image: url("/assets/lady.png");
+  background-image: url("./assets/lady.png");
   background-attachment: scroll;
   background-size: cover;
   background-position: center top;
@@ -821,7 +821,7 @@ body {
 }
 
 .gjs-div.c47963 {
-  background-image: url("/assets/perfect-interviewing.png");
+  background-image: url("./assets/perfect-interviewing.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center top;
@@ -829,7 +829,7 @@ body {
 }
 
 .gjs-div.c49135 {
-  background-image: url("/assets/negotiate-salary.png");
+  background-image: url("./assets/negotiate-salary.png");
   background-repeat: repeat;
   background-attachment: scroll;
   background-position: center top;
@@ -1188,7 +1188,7 @@ body {
 }
 
 .gjs-div.c67726 {
-  background-image: url("/assets/R-Sethi-2-1.png");
+  background-image: url("./assets/R-Sethi-2-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1204,7 +1204,7 @@ body {
 }
 
 .gjs-col.col.c71530 {
-  background-image: url("/assets/dream-job-background-dark.png");
+  background-image: url("./assets/dream-job-background-dark.png");
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -1444,7 +1444,7 @@ body {
 
 .gjs-div.c64879 {
   height: 350px;
-  background-image: url("/assets/Earnable_Icons_RD09_1-1\ copy-3.png");
+  background-image: url("./assets/Earnable_Icons_RD09_1-1\ copy-3.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1634,7 +1634,7 @@ body {
 
 .gjs-div.c58761.notch-right {
   height: 220px;
-  background-image: url("/assets/1.jpg");
+  background-image: url("./assets/1.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1649,7 +1649,7 @@ body {
 
 .gjs-div.c61017.mb-3.mb-md-0.notch-right {
   width: 100%;
-  background-image: url("/assets/Nathan_Riley.jpg");
+  background-image: url("./assets/Nathan_Riley.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1661,7 +1661,7 @@ body {
 .gjs-div.c62294.notch-right.mb-3.mb-md-0 {
   height: 100%;
   width: 100%;
-  background-image: url("/assets/GAURAV_KAPOOR.jpg");
+  background-image: url("./assets/GAURAV_KAPOOR.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1672,7 +1672,7 @@ body {
 .gjs-div.c62993.mb-3.mb-md-0.notch-right {
   height: 100%;
   width: 100%;
-  background-image: url("/assets/Robert-Ward.jpg");
+  background-image: url("./assets/Robert-Ward.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1681,7 +1681,7 @@ body {
 }
 
 .gjs-div.c63813 {
-  background-image: url("/assets/Monica-Galvan.jpg");
+  background-image: url("./assets/Monica-Galvan.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1742,7 +1742,7 @@ body {
 
 .gjs-div.c68523.notch-right.mb-3.mb-md-0 {
   height: 100%;
-  background-image: url("/assets/Karthik_Gopalakrishnan.jpg");
+  background-image: url("./assets/Karthik_Gopalakrishnan.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1756,7 +1756,7 @@ body {
 }
 
 .gjs-div.c69083.notch-right.mb-3.mb-md-0 {
-  background-image: url("/assets/Oswin-Frans.jpg");
+  background-image: url("./assets/Oswin-Frans.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1944,7 +1944,7 @@ body {
 .gjs-div.c70362.notch-right.mb-3.mb-md-0 {
   min-height: 220px;
   height: 100%;
-  background-image: url("/assets/ELAINE_YU.png");
+  background-image: url("./assets/ELAINE_YU.png");
   background-attachment: scroll;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1957,7 +1957,7 @@ body {
 }
 
 .gjs-div.c71118.notch-right.mb-3.mb-md-0 {
-  background-image: url("/assets/ADAM_WHISTLER.jpg");
+  background-image: url("./assets/ADAM_WHISTLER.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2005,7 +2005,7 @@ body {
 .gjs-div.c69902.notch-right.mb-3.mb-md-0 {
   height: 100%;
   min-height: 220px;
-  background-image: url("/assets/Will_Schoeffler.jpg");
+  background-image: url("./assets/Will_Schoeffler.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2015,7 +2015,7 @@ body {
 .gjs-div.c70739.notch-right.mb-3.mb-md-0 {
   height: 100%;
   min-height: 220px;
-  background-image: url("/assets/Kenny_Sabarese.jpg");
+  background-image: url("./assets/Kenny_Sabarese.jpg");
   background-attachment: local;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2457,7 +2457,7 @@ body {
 }
 
 .gjs-div.c63813.notch-right.mb-md-0.mb-3 {
-  background-image: url("/assets/Monica-Galvan.jpg");
+  background-image: url("./assets/Monica-Galvan.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -2465,7 +2465,7 @@ body {
 }
 
 .gjs-div.mb-3.mb-md-0.notch-right {
-  background-image: url("/assets/1.jpg");
+  background-image: url("./assets/1.jpg");
   background-attachment: scroll;
   background-size: cover;
   background-position: center top;
@@ -2496,7 +2496,7 @@ body {
 }
 
 .notch-right {
-  background-image: url("/assets/Monica-Galvan.jpg");
+  background-image: url("./assets/Monica-Galvan.jpg");
   background-repeat: repeat;
   background-position: left top;
   background-attachment: scroll;
@@ -2510,7 +2510,7 @@ body {
 }
 
 .gjs-div.notch-right.mb-3.mb-md-0.-c345r35 {
-  background-image: url("/assets/Monica-Galvan.jpg");
+  background-image: url("./assets/Monica-Galvan.jpg");
   background-attachment: scroll;
   background-position: center top;
   background-size: cover;
