@@ -1,8 +1,16 @@
-@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css");
+
+@import url("https://use.typekit.net/itu5vec.css");
+
+@import url("https://iwt-student-platform.s3.amazonaws.com/assets/fonts/euclid.css");
+
+@import url("https://iwt-student-platform.s3.amazonaws.com/sales-page/earnable-styles.css");
 
 :root {
   --primary-brand-color: #1ca5fc;
   --secondary-brand-color: #54a9fe;
+
   --white: #ffffff;
   --gray-50: #fbfbfb;
   --gray-100: #f5f5f5;
@@ -11,36 +19,44 @@
   --gray-600: #808080;
   --gray-800: #2a2b2b;
   --black: #000000;
+
   --body-bg-color: var(--white);
   --body-color: var(--black);
+
   --font-weight-book: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-black: 800;
+
   --normal-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --base-font-size: 16px;
   --line-height-normal: 1.5;
   --font-size-small: 0.875rem;
+
   --headings-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: 1.2;
+
   --h1-font-size: 2.488rem;
   --h2-font-size: 2.074rem;
   --h3-font-size: 1.728rem;
   --h4-font-size: 1.44rem;
   --h5-font-size: 1.2rem;
   --h6-font-size: 1rem;
+
   --btn-padding-x: 1.333rem;
   --btn-padding-y: 0.625rem;
   --btn-sm-padding-x: 0.75rem;
   --btn-sm-padding-y: 0.5rem;
   --btn-lg-padding-x: 0.75rem;
   --btn-lg-padding-y: 0.875rem;
+
   --btn-focus-shadow: #1ca5fc88;
   --btn-secondary-focus-shadow: #00000088;
+
   --shadow: 0 2px 29px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -48,14 +64,29 @@
   --normal-font-family: ff-tisa-web-pro, "Lucida Bright", Lucidabright,
     "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
     "Liberation Serif", Georgia, serif;
+
   --headings-font-family: ff-tisa-web-pro, "Lucida Bright", Lucidabright,
     "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
     "Liberation Serif", Georgia, serif;
+
   --base-font-size: 24px;
 }
+/* 
+Table of Contents:
+
+1. Base Styles
+2. Atoms
+3. Molecules
+4. Organisms
+5. Utility classes
+*/
+
+/* BASE STYLES */
 
 * {
   box-sizing: border-box;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 html {
@@ -63,13 +94,15 @@ html {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   font-family: var(--normal-font-family);
   font-weight: var(--font-weight-book);
   line-height: var(--line-height-normal);
   color: var(--body-color);
   background-color: var(--body-bg-color);
 }
+
+/* ATOMS */
 
 h1,
 .h1,
@@ -92,27 +125,22 @@ h1,
 .h1 {
   font-size: var(--h1-font-size);
 }
-
 h2,
 .h2 {
   font-size: var(--h2-font-size);
 }
-
 h3,
 .h3 {
   font-size: var(--h3-font-size);
 }
-
 h4,
 .h4 {
   font-size: var(--h4-font-size);
 }
-
 h5,
 .h5 {
   font-size: var(--h5-font-size);
 }
-
 h6,
 .h6 {
   font-size: var(--h6-font-size);
@@ -130,14 +158,14 @@ small,
 
 ul {
   list-style: none;
-  margin: 0px;
+  margin: 0;
   padding-left: 2.625rem;
 }
 
 ul.list-unstyled {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 ul li {
@@ -148,7 +176,7 @@ ul li:not(:last-of-type) {
   margin-bottom: calc(1rem * var(--line-height-normal));
 }
 
-ul:not(.list-unstyled) li::before {
+ul:not(.list-unstyled) li:before {
   content: "";
   height: 0.6875rem;
   width: 0.6875rem;
@@ -157,7 +185,7 @@ ul:not(.list-unstyled) li::before {
   border: 0.1rem solid var(--white);
   background-color: var(--primary-brand-color);
   position: absolute;
-  left: calc(-1.65625rem);
+  left: calc(2.625rem / -2 - 0.6875rem / 2);
   top: 0.35rem;
 }
 
@@ -165,7 +193,7 @@ blockquote {
   border-left: 3px solid var(--primary-brand-color);
   padding-left: 2rem;
   font-style: italic;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 hr {
@@ -176,9 +204,11 @@ hr {
   color: var(--white);
   border: 1px solid var(--primary-brand-color);
   background-color: var(--primary-brand-color);
+
   display: inline-block;
   border-radius: 2px;
   padding: var(--btn-padding-y) var(--btn-padding-x);
+
   font-size: var(--base-font-size);
   font-family: var(--normal-font-family);
   font-weight: var(--font-weight-bold);
@@ -186,8 +216,9 @@ hr {
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s,
-    border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn:focus {
@@ -251,13 +282,17 @@ a.btn {
   background-color: var(--primary-brand-color);
   color: var(--white);
   text-transform: uppercase;
-  padding: 0px 0.5rem;
+  padding: 0 0.5rem;
   font-size: var(--font-size-small);
   border-radius: 3px;
   text-align: center;
 }
 
 .container {
+  /* 
+    This is needed so the container can be seen in the page builder.
+    If it has no height, it is basically invisible.
+   */
   max-width: 910px;
 }
 
@@ -276,7 +311,6 @@ a.btn {
 .container.container-640 {
   max-width: 640px;
 }
-
 .container.container-507 {
   max-width: 507px;
 }
@@ -297,6 +331,8 @@ a.btn {
 .spacer {
   min-height: 1rem;
 }
+
+/* MOLECULES */
 
 .faq-item {
   display: flex;
@@ -362,9 +398,10 @@ a.btn {
   text-align: center;
 }
 
+/* ORGANISMS */
 header.header {
   background-color: var(--white);
-  padding: 1.25rem 0px;
+  padding: 1.25rem 0;
 }
 
 header.header.header--transparent {
@@ -374,7 +411,7 @@ header.header.header--transparent {
 footer {
   background-color: var(--black);
   color: var(--white);
-  padding: 1.4rem 0px;
+  padding: 1.4rem 0;
 }
 
 footer .gjs-container {
@@ -411,7 +448,7 @@ footer a {
 }
 
 .module {
-  padding: 2.375rem 0px 5.4375rem;
+  padding: 2.375rem 0 5.4375rem;
   background-color: var(--gray-100);
 }
 
@@ -462,8 +499,8 @@ footer a {
 }
 
 .pricing-plan__benefit p {
-  flex: 1 1 auto;
-  margin-bottom: 0px;
+  flex: auto;
+  margin-bottom: 0;
 }
 
 .pricing-plan__benefit.pricing-plan__benefit--unavailable p {
@@ -471,6 +508,7 @@ footer a {
   color: var(--gray-600);
 }
 
+/* UTILITY CLASSES */
 .text-center {
   text-align: center;
 }
@@ -491,6 +529,12 @@ footer a {
   width: 100%;
 }
 
+/* COMPONENT TYPE CLASSES */
+/*
+  These clases are used to identify components
+  or make a component work better with the editor.
+*/
+
 .gjs-container {
   min-height: 3rem;
 }
@@ -501,16 +545,17 @@ footer a {
 }
 
 .gjs-div {
-  /* min-height: 8px; */
+  min-height: 8px;
 }
 
+/* Marketo Forms */
 .marketo-form__success-message {
-  height: 0px;
+  height: 0;
   opacity: 0;
 }
 
 .marketo-form.marketo-form--submitted > .marketo-form__success-message {
-  transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease;
   height: auto;
   opacity: 1;
   font-style: italic;
@@ -528,10 +573,10 @@ footer a {
 .mktoForm .mktoFieldDescriptor label {
   color: var(--black);
   font-weight: var(--font-weight-bold);
-  display: block;
-  margin-bottom: 7px;
   font-size: 0.75rem !important;
+  display: block;
   width: 100% !important;
+  margin-bottom: 7px;
 }
 
 .mktoForm .mktoOffset,
@@ -541,7 +586,7 @@ footer a {
 
 .mktoForm .mktoField {
   width: 100% !important;
-  border: 1px solid rgb(167, 167, 167) !important;
+  border: 1px solid #a7a7a7 !important;
   height: 1.75rem !important;
   padding: 0.5rem !important;
   font-family: var(--normal-font-family) !important;
@@ -557,7 +602,7 @@ footer a {
 }
 
 .mktoForm span.mktoButtonWrap {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 
 .mktoForm .mktoButton {
@@ -577,11 +622,13 @@ footer a {
   .guarantee {
     padding: 1rem;
   }
+
   .guarantee__seal {
     float: none;
-    margin: 0px auto;
+    margin: 0 auto;
     display: block;
   }
+
   .pricing-plan__body {
     padding: 1.375rem;
   }
@@ -591,31 +638,40 @@ footer a {
   blockquote {
     padding-left: 1rem;
   }
+
   .faq-item {
     flex-direction: column;
   }
+
   .faq-item__question {
     width: 100%;
   }
+
   .faq-item__answer {
     width: 100%;
   }
 }
 
+/* Typography */
 .f-euclid {
-  font-family: EuclidCircularA;
+  font-family: "EuclidCircularA";
 }
 
+/* https://iwt-student-platform.s3.amazonaws.com/assets/fonts/euclid.css */
+
+/* Earnable Calculator */
+
 .earn-calculator {
-  background-color: rgb(249, 239, 223);
-  border-top: 10px solid rgb(0, 0, 0);
+  background-color: #f9efdf;
+  border-top: 10px solid #000000;
   padding: 50px 15px 10px;
   text-align: center;
 }
 
 .earn-calculator h3 {
   font-size: 22px;
-  font-family: EuclidCircularA;
+  letter-spacing: 2;
+  font-family: "EuclidCircularA";
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 25px;
@@ -623,7 +679,7 @@ footer a {
 
 .earn-calculator hr {
   height: 1px;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   border: none;
   display: block;
   margin-top: 30px;
@@ -632,21 +688,27 @@ footer a {
 .earn-calculator select {
   display: block;
   font-size: 16px;
-  font-family: EuclidCircularA;
+  font-family: "EuclidCircularA";
   font-weight: 400;
   line-height: 1;
   padding: 12px 30px 12px 20px;
   box-sizing: border-box;
-  margin: 0px 5px;
+  margin: 0 5px;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%0A%3Csvg width='19px' height='10px' viewBox='0 0 19 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Style-guide' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Form-fields-' transform='translate(-492.000000, -1130.000000)' stroke='%23000000'%3E%3Cg id='Group-2' transform='translate(150.000000, 1115.000000)'%3E%3Cpolyline id='Stroke-1' transform='translate(351.500000, 20.000000) rotate(-90.000000) translate(-351.500000, -20.000000) ' points='356 29 347 20 356 11'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
-    linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
   background-repeat: no-repeat, repeat;
-  background-position: right 10px top 50%, 0px 0px;
+  background-position: right 10px top 50%, 0 0;
   background-size: 13px 7px, 100%;
+}
+
+.earn-calculator select::-ms-expand {
+  display: none;
 }
 
 .earn-calculator p {
@@ -655,7 +717,7 @@ footer a {
 
 .earn-calculator-product {
   font-size: 16px;
-  font-family: EuclidCircularA;
+  font-family: "EuclidCircularA";
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -673,14 +735,15 @@ footer a {
 }
 
 .earn-calculator-col .earn-calculator-label {
-  margin: 0px;
+  margin: 0;
 }
 
 .earn-calculator-total {
-  background-color: rgb(42, 48, 48);
-  color: rgb(255, 255, 255);
+  background-color: #2a3030;
+  color: #fff;
   font-size: 22px;
-  font-family: EuclidCircularA;
+  letter-spacing: 2;
+  font-family: "EuclidCircularA";
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
@@ -688,30 +751,38 @@ footer a {
   margin: 30px auto;
 }
 
+/* Calculator Very Small Mobile */
 @media (max-width: 400px) {
   .earn-calculator-product {
     flex-wrap: wrap;
   }
+
   .earn-calculator-col,
   .earn-calculator-label {
     margin-bottom: 10px;
   }
 }
 
+/* Calculator Desktop Styles */
 @media (min-width: 768px) {
   .earn-calculator {
     text-align: left;
     padding: 50px 45px 10px;
   }
+
   .earn-calculator-product {
     justify-content: flex-start;
   }
+
   .earn-calculator-col {
     display: inline-block;
+    flex-direction: none;
   }
+
   .earn-calculator select {
     display: inline-block;
   }
+
   .earn-calculator-label {
     display: inline-block;
     margin: 8px 5px;
@@ -729,54 +800,55 @@ footer a {
 .MarketoForm label.mktoLabel {
   display: block;
   float: none;
-  font-family: ff-tisa-web-pro, serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 0.75rem;
   text-transform: uppercase;
   width: 100% !important;
 }
 
 .MarketoForm button.mktoButton {
-  display: inline-block;
-  line-height: 1.125rem;
-  margin: 0px;
-  height: auto;
-  appearance: none;
-  vertical-align: middle;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.063) 0px 0px 0px 20rem inset !important;
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(42, 48, 48) !important;
+  box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, 0.0625) !important;
+  color: #fff !important;
+  background-color: #2a3030 !important;
   padding: 0.75rem 20px !important;
   border: 1px solid transparent !important;
   text-transform: uppercase !important;
   font-size: 0.825rem !important;
   font-weight: 700 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica",
+    "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
   text-decoration: none !important;
+  display: inline-block;
+  line-height: 1.125rem;
+  margin: 0;
+  height: auto;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
   width: inherit !important;
 }
 
 .MarketoForm input.mktoField {
   margin-top: 4px;
-  font-family: ff-tisa-web-pro, serif;
+  font-family: "ff-tisa-web-pro", serif;
   font-size: 1rem;
+  width: 100% !important;
   padding: 12px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid #ccc;
   display: block;
   box-sizing: border-box;
-  transition: border-color 0.2s ease-in-out 0s;
-  width: 100% !important;
+  box-shadow: 0;
+  transition: border-color 0.2s ease-in-out;
 }
 
 @media (max-width: 520px) {
   .btn-get-the-detail {
-    margin: 0px auto 20px !important;
+    margin: 0 auto 20px !important;
   }
 }
-
-@media (max-width: 730px) and (min-width: 630px) {
+@media (min-width: 630px) and (max-width: 730px) {
   .btn-get-the-detail {
     margin: 10px auto !important;
   }
@@ -786,41 +858,40 @@ footer a {
 }
 
 .circle {
-  background: rgb(255, 255, 255);
-  border: 5px solid rgb(35, 84, 66);
+  background: #ffffff;
+  border: 5px solid #235442;
   border-radius: 50%;
   height: 20px;
   width: 20px;
 }
 
 .time-line {
-  border-right: 2px solid rgb(35, 84, 66);
+  border-right: 2px solid #235442;
 }
 
 .playbook {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  background-color: rgb(248, 238, 223);
+  background-color: #f8eedf;
 }
-
 .border-top {
   border-top: 5px solid black;
 }
 
 .bt {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-style: solid;
-  border-width: 10px 20px 0px;
-  margin: auto auto 10px;
-  border-color: rgb(248, 238, 223) transparent transparent;
+  border-width: 10px 20px 0 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-color: #f8eedf transparent transparent;
 }
 
 p.caption {
   font-size: 0.9em;
   line-height: 1em;
 }
-
 @media only screen and (max-width: 40em) {
   p.caption {
     font-size: 0.7em;
@@ -873,8 +944,8 @@ p.caption {
 }
 
 .timeline-last-circle {
-  bottom: 0px;
   top: auto !important;
+  bottom: 0;
 }
 
 .product-guarantee-flex-center {
@@ -891,7 +962,7 @@ p.caption {
   top: 50%;
   right: -10%;
   transform: translateY(-50%);
-  background-color: rgb(249, 239, 223);
+  background-color: #f9efdf;
   z-index: -1;
 }
 
@@ -901,7 +972,7 @@ p.caption {
   left: 20px;
   width: 100%;
   height: 160px;
-  background-color: rgb(249, 239, 223);
+  background-color: #f9efdf;
   transform: translateY(-50%);
 }
 
@@ -919,7 +990,7 @@ p.caption {
 .hide-right-top-timeline::after {
   content: "";
   right: -5px;
-  top: 0px;
+  top: 0;
   width: 10px;
   height: 8px;
   background: white;
@@ -936,7 +1007,7 @@ p.caption {
   }
   .images-with-caption--two {
     max-width: 100% !important;
-    padding: 0px !important;
+    padding: 0 !important;
   }
   .images-with-caption--two img {
     max-width: 49% !important;
@@ -950,17 +1021,18 @@ p.caption {
   }
 }
 
-.faq-accordion ul li i::before,
-.faq-accordion ul li i::after,
+/*   ACCORDION STYLES   */
+.faq-accordion ul li i:before,
+.faq-accordion ul li i:after,
 .faq-accordion p,
 .faq-accordion i {
-  transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out;
 }
 
 .faq-accordion label {
   display: block;
-  color: rgb(0, 0, 0);
-  margin: 0px;
+  color: #000;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -968,6 +1040,7 @@ p.caption {
   font-weight: bold;
   display: inline-block;
   text-transform: uppercase;
+  max-width: 80%;
   font-size: 21px;
   line-height: 32px;
   letter-spacing: 2px;
@@ -975,7 +1048,7 @@ p.caption {
 }
 
 .faq-accordion p {
-  color: rgb(0, 0, 0);
+  color: #000;
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -983,29 +1056,27 @@ p.caption {
   overflow: hidden;
   max-height: 800px;
   opacity: 1;
-  margin: 45px 0px;
-  padding: 0px 0px 0px 45px;
-  transform: translate(0px, 0px);
+  margin: 45px 0;
+  padding: 0 0 0 45px;
+  transform: translate(0, 0);
   z-index: 2;
 }
 
 .faq-accordion ul {
   list-style: none;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 0px !important;
-  padding-left: 0px !important;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
 }
 
 .faq-accordion ul li {
   position: relative;
-  margin: 0px;
-  padding: 30px 0px;
-  border-top: 1.5px solid rgb(0, 0, 0);
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  border-top: 1.5px solid #000;
   list-style: none;
 }
 
@@ -1024,37 +1095,31 @@ p.caption {
 .faq-accordion ul li:nth-of-type(3) {
   animation-delay: 1s;
 }
-
 .faq-accordion ul li:last-of-type {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
-
 .faq-accordion ul li label > i {
   position: absolute;
-  transform: rotateX(180deg) translate(-6px, 0px);
+  transform: rotateX(180deg) translate(-6px, 0);
   margin-top: 16px;
   right: 25px;
 }
-
-.faq-accordion ul li label > i::before,
-.faq-accordion ul li label > i::after {
+.faq-accordion ul li label > i:before,
+.faq-accordion ul li label > i:after {
   content: "";
   position: absolute;
   background-color: rgb(80, 81, 84);
   width: 18px;
   height: 3px;
 }
-
-.faq-accordion ul li label > i::before {
-  border-radius: 0px 30% 30% 0px;
-  transform: translate(6px, 0px) rotateZ(-45deg);
+.faq-accordion ul li label > i:before {
+  border-radius: 0 30% 30% 0;
+  transform: translate(6px, 0) rotateZ(-45deg);
 }
-
-.faq-accordion ul li label > i::after {
-  border-radius: 30% 0px 0px 30%;
-  transform: translate(-6px, 0px) rotateZ(45deg);
+.faq-accordion ul li label > i:after {
+  border-radius: 30% 0 0 30%;
+  transform: translate(-6px, 0) rotateZ(45deg);
 }
-
 .faq-accordion ul li input[type="checkbox"] {
   position: absolute;
   cursor: pointer;
@@ -1063,22 +1128,20 @@ p.caption {
   z-index: 1;
   opacity: 0;
 }
-
 .faq-accordion ul li input[type="checkbox"]:checked ~ p {
-  margin: 0px;
-  max-height: 0px;
+  margin: 0;
+  max-height: 0;
   opacity: 0;
-  transform: translate(0px, 50%);
+  transform: translate(0, 50%);
 }
-
 .faq-accordion ul li input[type="checkbox"]:checked ~ i {
-  transform: rotateX(0deg) translate(-6px, 0px);
+  transform: rotateX(0) translate(-6px, 0);
 }
 
 @keyframes flipdown {
   0% {
     opacity: 0;
-    transform-origin: center top;
+    transform-origin: top center;
     transform: rotateX(-90deg);
   }
   5% {
@@ -1094,12 +1157,12 @@ p.caption {
     transform: rotateX(-3deg);
   }
   100% {
-    transform-origin: center top;
+    transform-origin: top center;
     transform: rotateX(0deg);
   }
 }
 
 .nav .btn-get-the-detail-head {
   background-color: rgba(0, 0, 0, 0) !important;
-  border: 3px solid rgb(255, 255, 255) !important;
+  border: 3px solid #ffffff !important;
 }
